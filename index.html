@@ -1,0 +1,898 @@
+<!---
+By HTML CSS JAVASCRIPT
+Quran Karim website !!
+-->
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القرآن الكريم</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+body{
+    background-color: #333;
+    color: white;
+}
+.part-one{
+    color: white;
+}
+.part-one span{
+    color: red;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+.link-of-header{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 20px;
+    padding: 10px;
+}
+.link-of-header:hover{
+    color: red;
+    background-color: white;
+    font-size: 25px;
+}
+.link{
+    transform: translate(-351px , -5px);
+    width: 799px;
+
+}
+.about{
+    margin-top: 100px;
+}
+.but{
+    margin: 20px;
+}
+.read{
+    background-color: #222;
+}
+.img-{
+    margin: 40px;
+    background-color: #222;
+}
+.input-Search{
+    width: 500px    ;
+    margin: 30px;
+}
+.about{
+    justify-content: center;
+}
+.lable-for-search{
+    font-size: 40px;
+    cursor: pointer;
+    color: cyan;
+    transition: 0.5s;
+}
+.lable-for-search:hover{
+    font-size: 50px;
+    color: white;
+}
+.button{
+    border-radius: 0.475rem;
+    border: solid 1px #dee2e6;
+    color: white;
+    display: inline-block;
+    font-weight: 800;
+    /* line-height: 3.5em; */
+    min-width: 12em;
+    padding: 0.9rem;
+    box-shadow:0 0 1px cyan;
+    margin-bottom: 15px;
+    text-align: center;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.button:hover{
+    background-color: white;
+    color: #222;
+    box-shadow: 0 0 4px cyan;
+}
+.the-text{
+    width: 500px    ;
+}
+.Q-PDF{
+    transform: translate(502px , 10px);
+}
+fieldset{
+    background-color: #222;
+    width: 100%;
+}
+.maq-download{
+    margin-top: 150px;
+}
+.card{
+    width: 300px;
+    height: 250px;
+    background-color: white;
+    box-shadow:  0 0 20px cyan;
+   transition: 0.5s;
+}
+
+#one {
+     transform: translate(471px, 10px);
+}
+#two{
+    transform: translate(-312px , -329px);
+}
+#three{
+    transform: translate(-625px , -580px);
+}
+#fourth{
+    transform: translate(-935px ,-829px);
+
+}
+.down{
+    background-color: black;
+    height: 400px;
+    width: 100%;
+
+}
+
+    </style>
+</head>
+<body onload="welcome_function()">
+       <header>
+        <div class="icon">
+        <h1 class="part-one">
+            القرآن
+            <span>
+                الكريم
+            </span>
+            
+        </h1>
+        <div class="link" dir="rtl">
+            <a href="" class="link-of-header" id="home">الصفحة الرئيسية</a> 
+            <a href="" class="link-of-header" id="read_Quran">قراءة القرآن الكريم</a> 
+            <a href="" class="link-of-header" id="read_Hadit">قراءة الحديث  النبوي</a> 
+            <a href="" class="link-of-header" id="tafsir">تفسير القرآن</a> 
+            <button id="Search">البحث</button>
+
+
+        </div>            
+        </div>
+       </header>
+       <div class="about">
+        <center>
+        <h1>
+            القرآن الكريم
+        </h1>
+        <h3>
+            القرآن الكريم مكتوب كاملا
+        </h3>
+        <div class="but">
+        <button id="read_Quran">
+            قراءة القرآن الكريم
+        </button>
+        <button id="read_Hadit">
+            قراءة الحديث النبوي
+        </button>            
+        </div>
+        <fieldset></fieldset>
+        <div class="read">
+            <img src="https://surahquran.com/img/iqraa.png" alt="" srcset="" class="img-">
+            <div class="Search-div">
+                <label for="Search" class="lable-for-search">البحث</label>            </div>
+                <a href="https://surahquran.com/1.html" class="button">سورة الفاتحة</a>
+<a href="https://surahquran.com/2.html" class="button" data-aos="zoom-in">سورة البقرة</a>
+<a href="https://surahquran.com/3.html" class="button" data-aos="zoom-in">سورة آل عمران</a>
+<a href="https://surahquran.com/4.html" class="button" data-aos="zoom-in">سورة النساء</a>
+<a href="https://surahquran.com/5.html" class="button" data-aos="zoom-in">سورة المائدة</a>
+<a href="https://surahquran.com/6.html" class="button" data-aos="zoom-in">سورة الأنعام</a>
+<a href="https://surahquran.com/7.html" class="button" data-aos="zoom-in">سورة الأعراف</a>
+<a href="https://surahquran.com/8.html" class="button" data-aos="zoom-in">سورة الأنفال</a>
+<a href="https://surahquran.com/9.html" class="button" data-aos="zoom-in">سورة التوبة</a>
+<a href="https://surahquran.com/10.html" class="button" data-aos="zoom-in">سورة يونس</a>
+<a href="https://surahquran.com/11.html" class="button" data-aos="zoom-in">سورة هود</a>
+<a href="https://surahquran.com/12.html" class="button" data-aos="zoom-in">سورة يوسف</a>
+<a href="https://surahquran.com/13.html" class="button" data-aos="zoom-in">سورة الرعد</a>
+<a href="https://surahquran.com/14.html" class="button" data-aos="zoom-in">سورة إبراهيم</a>
+<a href="https://surahquran.com/15.html" class="button" data-aos="zoom-in">سورة الحجر</a>
+<a href="https://surahquran.com/16.html" class="button" data-aos="zoom-in">سورة النحل</a>
+<a href="https://surahquran.com/17.html" class="button" data-aos="zoom-in">سورة الإسراء</a>
+<a href="https://surahquran.com/18.html" class="button" data-aos="zoom-in">سورة الكهف</a>
+<a href="https://surahquran.com/19.html" class="button" data-aos="zoom-in">سورة مريم</a>
+<a href="https://surahquran.com/20.html" class="button" data-aos="zoom-in">سورة طه</a>
+<a href="https://surahquran.com/21.html" class="button" data-aos="zoom-in">سورة الأنبياء</a>
+<a href="https://surahquran.com/22.html" class="button" data-aos="zoom-in">سورة الحج</a>
+<a href="https://surahquran.com/23.html" class="button" data-aos="zoom-in">سورة المؤمنون</a>
+<a href="https://surahquran.com/24.html" class="button" data-aos="zoom-in">سورة النور</a>
+<a href="https://surahquran.com/25.html" class="button" data-aos="zoom-in">سورة الفرقان</a>
+<a href="https://surahquran.com/26.html" class="button" data-aos="zoom-in">سورة الشعراء</a>
+<a href="https://surahquran.com/27.html" class="button"data-aos="zoom-in">سورة النمل</a>
+<a href="https://surahquran.com/28.html" class="button" data-aos="zoom-in">سورة القصص</a>
+<a href="https://surahquran.com/29.html" class="button" data-aos="zoom-in">سورة العنكبوت</a>
+<a href="https://surahquran.com/30.html" class="button" data-aos="zoom-in">سورة الروم</a>
+<a href="https://surahquran.com/31.html" class="button" data-aos="zoom-in">سورة لقمان</a>
+<a href="https://surahquran.com/32.html" class="button" data-aos="zoom-in">سورة السجدة</a>
+<a href="https://surahquran.com/33.html" class="button" data-aos="zoom-in">سورة الأحزاب</a>
+<a href="https://surahquran.com/34.html" class="button" data-aos="zoom-in">سورة سبأ</a>
+<a href="https://surahquran.com/35.html" class="button" data-aos="zoom-in">سورة فاطر</a>
+<a href="https://surahquran.com/36.html" class="button" data-aos="zoom-in">سورة يس</a>
+<a href="https://surahquran.com/37.html" class="button" data-aos="zoom-in">سورة الصافات</a>
+<a href="https://surahquran.com/38.html" class="button" data-aos="zoom-in">سورة ص</a>
+<a href="https://surahquran.com/39.html" class="button" data-aos="zoom-in">سورة الزمر</a>
+<a href="https://surahquran.com/40.html" class="button" data-aos="zoom-in">سورة غافر</a>
+<a href="https://surahquran.com/41.html" class="button" data-aos="zoom-in">سورة فصلت</a>
+<a href="https://surahquran.com/42.html" class="button"data-aos="zoom-in">سورة الشورى</a>
+<a href="https://surahquran.com/43.html" class="button" data-aos="zoom-in">سورة الزخرف</a>
+<a href="https://surahquran.com/44.html" class="button" data-aos="zoom-in">سورة الدخان</a>
+<a href="https://surahquran.com/45.html" class="button" data-aos="zoom-in">سورة الجاثية</a>
+<a href="https://surahquran.com/46.html" class="button" data-aos="zoom-in">سورة الأحقاف</a>
+<a href="https://surahquran.com/47.html" class="button" data-aos="zoom-in">سورة محمد</a>
+<a href="https://surahquran.com/48.html" class="button" data-aos="zoom-in">سورة الفتح</a>
+<a href="https://surahquran.com/49.html" class="button" data-aos="zoom-in">سورة الحجرات</a>
+<a href="https://surahquran.com/50.html" class="button" data-aos="zoom-in">سورة ق</a>
+<a href="https://surahquran.com/51.html" class="button" data-aos="zoom-in">سورة الذاريات</a>
+<a href="https://surahquran.com/52.html" class="button" data-aos="zoom-in">سورة الطور</a>
+<a href="https://surahquran.com/53.html" class="button" data-aos="zoom-in">سورة النجم</a>
+<a href="https://surahquran.com/54.html" class="button" data-aos="zoom-in">سورة القمر</a>
+<a href="https://surahquran.com/55.html" class="button" data-aos="zoom-in">سورة الرحمن</a>
+<a href="https://surahquran.com/56.html" class="button" data-aos="zoom-in">سورة الواقعة</a>
+<a href="https://surahquran.com/57.html" class="button" data-aos="zoom-in">سورة الحديد</a>
+<a href="https://surahquran.com/58.html" class="button" data-aos="zoom-in">سورة المجادلة</a>
+<a href="https://surahquran.com/59.html" class="button" data-aos="zoom-in">سورة الحشر</a>
+<a href="https://surahquran.com/60.html" class="button" data-aos="zoom-in">سورة الممتحنة</a>
+<a href="https://surahquran.com/61.html" class="button" data-aos="zoom-in">سورة الصف</a>
+<a href="https://surahquran.com/62.html" class="button" data-aos="zoom-in">سورة الجمعة</a>
+<a href="https://surahquran.com/63.html" class="button" data-aos="zoom-in">سورة المنافقون</a>
+<a href="https://surahquran.com/64.html" class="button" data-aos="zoom-in">سورة التغابن</a>
+<a href="https://surahquran.com/65.html" class="button" data-aos="zoom-in">سورة الطلاق</a>
+<a href="https://surahquran.com/66.html" class="button" data-aos="zoom-in">سورة التحريم</a>
+<a href="https://surahquran.com/67.html" class="button" data-aos="zoom-in">سورة الملك</a>
+<a href="https://surahquran.com/68.html" class="button" data-aos="zoom-in">سورة القلم</a>
+<a href="https://surahquran.com/69.html" class="button" data-aos="zoom-in">سورة الحاقة</a>
+<a href="https://surahquran.com/70.html" class="button" data-aos="zoom-in">سورة المعارج</a>
+<a href="https://surahquran.com/71.html" class="button" data-aos="zoom-in">سورة نوح</a>
+<a href="https://surahquran.com/72.html" class="button" data-aos="zoom-in">سورة الجن</a>
+<a href="https://surahquran.com/73.html" class="button" data-aos="zoom-in">سورة المزمل</a>
+<a href="https://surahquran.com/74.html" class="button" data-aos="zoom-in">سورة المدثر</a>
+<a href="https://surahquran.com/75.html" class="button" data-aos="zoom-in">سورة القيامة</a>
+<a href="https://surahquran.com/76.html" class="button" data-aos="zoom-in">سورة الإنسان</a>
+<a href="https://surahquran.com/77.html" class="button" data-aos="zoom-in">سورة المرسلات</a>
+<a href="https://surahquran.com/78.html" class="button" data-aos="zoom-in">سورة النبأ</a>
+<a href="https://surahquran.com/79.html" class="button" data-aos="zoom-in">سورة النازعات</a>
+<a href="https://surahquran.com/80.html" class="button" data-aos="zoom-in">سورة عبس</a>
+<a href="https://surahquran.com/81.html" class="button" data-aos="zoom-in">سورة التكوير</a>
+<a href="https://surahquran.com/82.html" class="button" data-aos="zoom-in">سورة الإنفطار</a>
+<a href="https://surahquran.com/83.html" class="button" data-aos="zoom-in">سورة المطففين</a>
+<a href="https://surahquran.com/84.html" class="button" data-aos="zoom-in">سورة الإنشقاق</a>
+<a href="https://surahquran.com/85.html" class="button" data-aos="zoom-in">سورة البروج</a>
+<a href="https://surahquran.com/86.html" class="button" data-aos="zoom-in">سورة الطارق</a>
+<a href="https://surahquran.com/87.html" class="button" data-aos="zoom-in">سورة الأعلى</a>
+<a href="https://surahquran.com/88.html" class="button" data-aos="zoom-in">سورة الغاشية</a>
+<a href="https://surahquran.com/89.html" class="button" data-aos="zoom-in">سورة الفجر</a>
+<a href="https://surahquran.com/90.html" class="button" data-aos="zoom-in">سورة البلد</a>
+<a href="https://surahquran.com/91.html" class="button" data-aos="zoom-in">سورة الشمس</a>
+<a href="https://surahquran.com/92.html" class="button" data-aos="zoom-in">سورة الليل</a>
+<a href="https://surahquran.com/93.html" class="button" data-aos="zoom-in">سورة الضحى</a>
+<a href="https://surahquran.com/94.html" class="button" data-aos="zoom-in">سورة الشرح</a>
+<a href="https://surahquran.com/95.html" class="button" data-aos="zoom-in">سورة التين</a>
+<a href="https://surahquran.com/96.html" class="button" data-aos="zoom-in">سورة العلق</a>
+<a href="https://surahquran.com/97.html" class="button"  data-aos="zoom-in">سورة القدر</a>
+<a href="https://surahquran.com/98.html" class="button" data-aos="zoom-in">سورة البينة</a>
+<a href="https://surahquran.com/99.html" class="button" data-aos="zoom-in">سورة الزلزلة</a>
+<a href="https://surahquran.com/100.html" class="button" data-aos="zoom-in">سورة العاديات</a>
+<a href="https://surahquran.com/101.html" class="button" data-aos="zoom-in">سورة القارعة</a>
+<a href="https://surahquran.com/102.html" class="button" data-aos="zoom-in">سورة التكاثر</a>
+<a href="https://surahquran.com/103.html" class="button" data-aos="zoom-in">سورة العصر</a>
+<a href="https://surahquran.com/104.html" class="button" data-aos="zoom-in">سورة الهمزة</a>
+<a href="https://surahquran.com/105.html" class="button" data-aos="zoom-in">سورة الفيل</a>
+<a href="https://surahquran.com/106.html" class="button" data-aos="zoom-in">سورة قريش</a>
+<a href="https://surahquran.com/107.html" class="button" data-aos="zoom-in">سورة الماعون</a>
+<a href="https://surahquran.com/108.html" class="button" data-aos="zoom-in">سورة الكوثر</a>
+<a href="https://surahquran.com/109.html" class="button" data-aos="zoom-in">سورة الكافرون</a>
+<a href="https://surahquran.com/110.html" class="button" data-aos="zoom-in">سورة النصر</a>
+<a href="https://surahquran.com/111.html" class="button" data-aos="zoom-in">سورة المسد</a>
+<a href="https://surahquran.com/112.html" class="button" data-aos="zoom-in">سورة الإخلاص</a>
+<a href="https://surahquran.com/113.html" class="button" data-aos="zoom-in" >سورة الفلق</a>
+<a href="https://surahquran.com/114.html" class="button" data-aos="zoom-in">سورة الناس</a>
+        </div>
+       </center>
+       <div class="Ra">
+        <center><h1>
+            القرآن الكريم مكتوب
+        </h1>
+        <div class="the-text">
+        <p>
+            بنعمة من الله و فضل منه سبحانه تم موقع القرآن الكريم مكتوبا بالتشكيل بالرسم العثماني للقراءة بروايات عديدة بالاضافة إلى عشر تفاسير و ست ترجمات للمعاني و ميزة الباحث القرآني و الاستماع لأشهر قراء العالم الاسلامي . قراءة آية الكرسي - أواخر سورة البقرة - آيات الشفاء - آيات السكينة
+
+
+        </p>            
+        </div>
+        <div class="download" data-aos="zoom-out-up">
+            <div class="Q-PDF">
+                <fieldset>                <img src="https://surahquran.com/img/core-img/pdf.ico" alt="" class="pdf">
+                                          <h1 class="text-about-download-pdf">
+                                            القرآن الكريم مكتوب pdf
+                                          </h1>
+
+</fieldset>
+<fieldset>
+    <img src="https://surahquran.com/img/mp3-icon.png" alt="" srcset="">
+    <h1 class="text-about-download">
+        قراء القرآن الكريم mp3
+    </h1>
+</fieldset>          
+<fieldset>
+    <img src="https://surahquran.com/img/blog/quran.png" alt="" srcset="">
+    <h1 class="text-about-download">
+        فهرس القرآن الكريم
+    </h1>
+</fieldset>      
+            </div>
+        </div>
+    </center>
+       </div>
+    </div>
+    <fieldset class="maq-download"></fieldset>
+    <div class="download-q-PDF">
+        <center>
+            <h1>
+                تحميل القرآن الكريم بصيغة pdf
+            </h1>
+            <div class="card" id="one" style="color:black">
+                <img src="https://surahquran.com/img/azraqm.jpg" alt="" class="img--" >
+                <h4>
+                    قرآن
+                </h4>
+                <p>
+                    مصحف المدينة المنورة العادي باللون الأزرق (quran karim maktoub) تمت طباعته في مجمع الملك فهد في المدينة المنورة .
+                </p>  
+            <div class="card" id="two">
+                <img src="https://surahquran.com/img/greenm.jpg" alt=""  class="img--">
+                <h4>
+                    مصحف المدينة المنورة الأخضر
+                </h4>
+                <p>
+                    مصحف المدينة المنورة العادي باللون الأخضر تمت طباعته في مجمع الملك فهد في المدينة المنورة .
+                </p>
+            </div> 
+            <div class="card" id="three">
+                <img src="https://surahquran.com/img/tajweedm.jpg" alt="" srcset=""  class="img--">
+                <h4>
+                    مصحف التجويد الملون
+                </h4>
+                <p>
+                    مصحف التجويد الملون مكتوب بالرسم العثماني بثلاثة ألوان الأزرق و الخضر و الأحمر بتدرجاته و التي تشمل 28 حكما تجويديا .
+                </p>
+            </div>                 
+            <div class="card" id="fourth">
+                <img src="https://surahquran.com/img/mobilem.jpg" alt="" srcset=""  class="img--">
+                <h4>
+                    القرآن الكريم للهاتف
+                </h4>
+                <p>
+                    القرآن الكريم للقراءة للهاتف النقال الموبايل أو الجوال وجميع الأجهزة المحمولة والتابلت مناسب للقراءة أثناء التنقل .
+                </p>
+            </div>
+        </center>
+    </div>
+
+<p style="color:#222">.</p>
+<p style="color:#222">.</p>
+<p style="color:#222">.</p>
+<p style="color:#222">.</p>
+<p style="color:#222">.</p>
+<p style="color:#222">.</p>
+<p style="color:#222">.</p>
+<p style="color:#222">.</p>
+<p style="color:#222">.</p>
+<p style="color:#222">.</p>
+<p style="color:#222">.</p>
+
+
+
+<div class="down">
+
+</div>
+    <script>
+        function welcome_function() {
+            // alert('السلام عليكم ورحمة الله وبركاته')
+        }
+        let quran = document.getElementById('read_Quran');
+        quran.onclick = () => {
+            location.href = "Quran.html";
+        }
+        let hadit = document.getElementById('read_Hadit');
+        hadit.onclick = () => {
+            location.href = "Hadit.html";
+        }
+        let tafsir = document.getElementById('tafsir');
+        tafsir.onclick = () => {
+            location.href = "tafsir.html";
+        }
+        let Search = document.getElementById('Search');
+        Search.onclick = () => {
+            let Search_pormpt = prompt('ابحث'); 
+
+                        if(Search_pormpt == "سورة الفاتحة"){
+                            location.href = 'Search/الفاتحة.html';
+                        } 
+                        if(Search_pormpt == "سورة البقرة"){
+                            location.href = 'Search/Baqara.html';
+
+                        } 
+                        if(Search_pormpt == "سورة ال عمران"){
+                            location.href = 'Search/Ali3omran.html';
+
+                        } 
+                        if(Search_pormpt == "سورة النساء"){
+                            location.href = 'Search/Nissa.html';
+
+                        } 
+                        if(Search_pormpt == "سورة المائدة"){
+                            location.href = 'Search/Maiida.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الانعام"){
+                            location.href = 'Search/An3am.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الاعراف"){
+                            location.href = 'Search/A3raf.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الانفال"){
+                            location.href = 'Search/Anfal.html';
+
+                        } 
+                        if(Search_pormpt == "سورة التوبة"){
+                            location.href = 'Search/Tawba.html';
+
+                        } 
+                        if(Search_pormpt == "سورة يونس"){
+                            location.href = 'Search/younse.html';
+
+                        } 
+                        if(Search_pormpt == "سورة هود"){
+                            location.href = 'Search/hod.html';
+
+                        } 
+                        if(Search_pormpt == "سورة يوسف"){
+                            location.href = 'Search/Yousfe.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الرعد"){
+                            location.href = 'Search/riaad.html';
+
+                        } 
+                        if(Search_pormpt == "سورة ابراهيم"){
+                            location.href = 'Search/ibrahime.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الحجر"){
+                            location.href = 'Search/hajer.html';
+
+                        } 
+                        if(Search_pormpt == "سورة النحل"){
+                            location.href = 'Search/Nahhle.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الاسراء"){
+                            location.href = 'Search/Issra.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الكهف"){
+                            location.href = 'Search/Kahfe.html';
+
+                        } 
+                        if(Search_pormpt == "سورة مريم"){
+                            location.href = 'Search/mariame.html';
+
+                        } 
+                        if(Search_pormpt == "سورة طه"){
+                            location.href = 'Search/taha.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الانبياء"){
+                            location.href = 'Search/anbia.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الحج"){
+                            location.href = 'Search/haj.html';
+
+                        } 
+                        if(Search_pormpt == "سورة المؤمنون"){
+                            location.href = 'Search/Moaminin.html';
+
+                        } 
+                        if(Search_pormpt == "سورة النور"){
+                            location.href = 'Search/Nor.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الفرقان"){
+                            location.href = 'Search/forqan.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الشعراء"){
+                            location.href = 'Search/cheara.html';
+
+                        } 
+                        if(Search_pormpt == "سورة النمل"){
+                            location.href = 'Search/namle.html';
+
+                        } 
+                        if(Search_pormpt == "سورة القصص"){
+                            location.href = 'Search/kiss.html';
+
+                        } 
+                        if(Search_pormpt == "سورة العنكبوت"){
+                            location.href = 'Search/3ankabot.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الروم"){
+                           
+                            location.href = 'Search/rom.html';
+                           
+                        } 
+                        if(Search_pormpt == "سورة لقمان"){
+                            location.href = 'Search/loqman.html';
+
+                        } 
+                        if(Search_pormpt == "سورة السجدة"){
+                            location.href = 'Search/Sojda.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الاحزاب"){
+                            location.href = 'Search/Ahzab.html';
+                           
+                        } 
+                        if(Search_pormpt == "سورة سبأ"){
+                            location.href = 'Search/Sabaa.html';
+
+                        } 
+                        if(Search_pormpt == "سورة فاطر"){
+                            location.href = 'Search/Fater.html';
+                            
+                        } 
+                        if(Search_pormpt == "سورة يس"){
+                            location.href = 'Search/Yas.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الصافات"){
+                            location.href = 'Search/Safat.html';
+
+                        } 
+                        if(Search_pormpt == "سورة ص"){
+                            location.href = 'Search/S.html';
+                            
+                        } 
+                        if(Search_pormpt == "سورة الزمر"){
+                            location.href = 'Search/Zomor.html';
+                           
+                        } 
+                        if(Search_pormpt == "سورة غافر"){
+                            location.href = 'Search/3afar.html';
+                            
+                        } 
+                        if(Search_pormpt == "سورة فصلت"){
+                            location.href = 'Search/fasalt.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الشورى"){
+                            location.href = 'Search/chawra.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الزخرف"){
+                            location.href = 'Search/zorof.html';
+                            
+                        } 
+                        if(Search_pormpt == "سورة الدخان"){
+                            location.href = 'Search/doan.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الجاثية"){
+                            location.href = 'Search/Jathia.html';
+                            
+                        } 
+                        if(Search_pormpt == "سورة الاحقاف"){
+                            location.href = 'Search/Ahkaf.html';
+                            
+                        } 
+                        if(Search_pormpt == "سورة محمد"){
+                            location.href = 'Search/Muhmmed.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الفتح"){
+                            location.href = 'Search/fath.html';
+                            
+                        } 
+                        if(Search_pormpt == "سورة الحجرات"){
+                            location.href = 'Search/hojorat.html';
+
+                        } 
+                        if(Search_pormpt == "سورة ق"){
+                            location.href = 'Search/Q.html';
+                            
+                        } 
+                        if(Search_pormpt == "سورة الذريات"){
+                            location.href = 'Search/Doryat.html';
+                            
+                        } 
+                        if(Search_pormpt == "سورة الطور"){
+                            location.href = 'Search/Tor.html';
+                            
+                        } 
+                        if(Search_pormpt == "سورة النجم"){
+                            location.href = 'Search/Najme.html';
+
+                        } 
+                        if(Search_pormpt == "سورة القمر"){
+                            location.href = 'Search/Qamar.html';
+                            
+                        } 
+                        if(Search_pormpt == "سورة الرحمن"){
+                            location.href = 'Search/rahman.html';
+                            
+                        } 
+                        if(Search_pormpt == "سورة الواقعة"){
+                            location.href = 'Search/wakia.html';
+                            
+                        } 
+                        if(Search_pormpt == "سورة الحديد"){
+                            location.href = 'Search/hadid.html';
+                           
+                        } 
+                        if(Search_pormpt == "سورة المجادلة"){
+                            location.href = 'Search/Mojadila.html';
+                            
+                        } 
+                        if(Search_pormpt == "سورة الحشر"){
+                            location.href = 'Search/Hashar.html';
+                            
+                        } 
+                        if(Search_pormpt == "سورة الممتحنة"){
+                            location.href = 'Search/Momtahina.html';
+                            
+                        } 
+                        if(Search_pormpt == "سورة الصف"){
+                            location.href = 'Search/SF.html';
+                            
+                        } 
+                        if(Search_pormpt == "سورة الجمعة"){
+                            location.href = 'Search/jomoa.html';
+                            
+                        } 
+                        if(Search_pormpt == "سورة المنافقون"){
+                            location.href = 'Search/monafiqon.html';
+                            
+                        } 
+                        if(Search_pormpt == "سورة التغابن"){
+                            location.href = 'Search/taba3on.html';
+                            
+                        } 
+                        if(Search_pormpt == "سورة الطلاق"){
+                            location.href = 'Search/talak.html';
+
+                        } 
+                        if(Search_pormpt == "سورة التحريم"){
+                            location.href = 'Search/tahrim.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الملك"){
+                            location.href = 'Search/Malak.html';
+                           
+                        } 
+                        if(Search_pormpt == "سورة القلم"){
+                            location.href = 'Search/Qalam.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الحاقة"){
+                            location.href = 'Search/haka.html';
+
+                        } 
+                        if(Search_pormpt == "سورة المعارج"){
+                            location.href = 'Search/ma3arg.html';
+
+                        } 
+                        if(Search_pormpt == "سورة نوح"){
+                            location.href = 'Search/Noh.html';
+                           
+                        } 
+                        if(Search_pormpt == "سورة الجن"){
+                            location.href = 'Search/jan.html';
+
+                        } 
+                        if(Search_pormpt == "سورة المزمل"){
+                            location.href = 'Search/Mozamel.html';
+
+                        } 
+                        if(Search_pormpt == "سورة المدثر"){
+                            location.href = 'Search/modether.html';
+                            
+                        } 
+                        if(Search_pormpt == "سورة القيامة"){
+                            location.href = 'Search/quama.html';
+                            
+                        } 
+                        if(Search_pormpt == "سورة الانسان"){
+                            location.href = 'Search/human.html';
+
+                        } 
+                        if(Search_pormpt == "سورة المرسلات"){
+                            location.href = 'Search/mursalat.html';
+
+                        } 
+                        if(Search_pormpt == "سورة النبأ"){
+                            location.href = 'Search/nabaa.html';
+
+                        } 
+                        if(Search_pormpt == "سورة النازعات"){
+                            location.href = 'Search/nazi3at.html';
+
+                        } 
+                        if(Search_pormpt == "سورة عبس"){
+                            location.href = 'Search/3abas.html';
+
+                        } 
+                        if(Search_pormpt == "سورة التكوير"){
+                            location.href = 'Search/takwir.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الانفطار"){
+                            location.href = 'Search/infitar.html';
+
+                        } 
+                        if(Search_pormpt == "سورة المطففين"){
+                            location.href = 'Search/motafifin.html';
+                           
+                        } 
+                        if(Search_pormpt == "سورة الانشقاق"){
+                            location.href = 'Search/inchiqaq.html';
+
+                        } 
+                        if(Search_pormpt == "سورة البروج"){
+                            location.href = 'Search/Boroj.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الطارق"){
+                            location.href = 'Search/Taraq.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الاعلى"){
+                            location.href = 'Search/a3la.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الغاشية"){
+                            location.href = 'Search/3achia.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الفجر"){
+                            location.href = 'Search/Fajer.html';
+
+                        } 
+                        if(Search_pormpt == "سورة البلد"){
+                            location.href = 'Search/baled.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الشمس"){
+                            location.href = 'Search/chamce.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الليل"){
+                            location.href = 'Search/night.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الضحى"){
+                            location.href = 'Search/toha.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الشرح"){
+                            location.href = 'Search/charh.html';
+
+                        } 
+                        if(Search_pormpt == "سورة التين"){
+                            location.href = 'Search/tin.html';
+
+                        } 
+                        if(Search_pormpt == "سورة العلق"){
+                            location.href = 'Search/3alak.html';
+
+                        } 
+                        if(Search_pormpt == "سورة القدر"){
+                            location.href = 'Search/kadar.html';
+                            
+
+                        } 
+                        if(Search_pormpt == "سورة البينة"){
+                            location.href = 'Search/biyana.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الزلزلة"){
+                            location.href = 'Search/zlzala.html';
+
+                        } 
+                        if(Search_pormpt == "سورة العاديات"){
+                            location.href = 'Search/3adiat.html';
+                           
+                        } 
+                        if(Search_pormpt == "سورة القارعة"){
+                            location.href = 'Search/kari3a.html';
+                            
+                        } 
+                        if(Search_pormpt == "سورة التكاثر"){
+                            location.href = 'Search/takater.html';
+
+                        } 
+                        if(Search_pormpt == "سورة العصر"){
+                            location.href = 'Search/3aser.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الهمزة"){
+                            location.href = 'Search/homaza.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الفيل"){
+                            location.href = 'Search/fil.html';
+
+                        } 
+                        if(Search_pormpt == "سورة قريش"){
+                            location.href = 'Search/quraych.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الماعون"){
+                            location.href = 'Search/ma3on.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الكوثر"){
+                            location.href = 'Search/kawtar.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الكافرون"){
+                            location.href = 'Search/kafirom.html';
+
+                        } 
+                        if(Search_pormpt == "سورة النصر"){
+                            location.href = 'Search/naser.html';
+
+                        } 
+                        if(Search_pormpt == "سورة المسد"){
+                            location.href = 'Search/masad.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الاخلاص"){
+                            location.href = 'Search/iklas.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الفلق"){
+                            location.href = 'Search/falak.html';
+
+                        } 
+                        if(Search_pormpt == "سورة الناس"){
+                            location.href = 'Search/man.html';
+
+                        } 
+                        if (Search_pormpt == "") {
+                            alert("بحثك فارغ")
+                        }
+                        else{
+                            alert('لا يوجد نتيجة لبحثك')
+                        }
+                
+       }
+
+    </script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        swal("السلام عليكم ورحمة الله وبركاته" , "" , "info" , {button : "استمرار"})
+    </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
